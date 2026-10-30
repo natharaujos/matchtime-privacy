@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade · Matchtime</title>
+<style>
+  :root { color-scheme: dark; --bg: #1b1d1f; --text: #ecebe6; --muted: #a3a39b; --led: #ffb000; --border: #34373a; }
+  body { margin: 0; padding: 40px max(16px, env(safe-area-inset-left)) 64px; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, sans-serif; }
+  main { max-width: 68ch; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 30px; line-height: 1.15; text-transform: uppercase; letter-spacing: 0.02em; }
+  h2 { margin: 32px 0 8px; font-size: 18px; color: var(--led); text-transform: uppercase; letter-spacing: 0.06em; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  code { font-family: ui-monospace, monospace; font-size: 0.92em; }
+  a { color: var(--led); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidade</h1>
+  <p class="meta">Extensão Matchtime para Google Chrome · Vigente desde 29 de outubro de 2026</p>
+
+  <h2>Resumo</h2>
+  <p>O Matchtime não coleta, não armazena em servidores e não compartilha nenhum dado pessoal. Todo o processamento acontece dentro do seu navegador.</p>
+
+  <h2>O que a extensão faz</h2>
+  <p>O Matchtime sincroniza a narração de uma live do YouTube com o streaming de um jogo. Para isso, nas abas que você escolhe no painel, ele lê a pequena região da imagem onde aparece o relógio do jogo, calcula a diferença entre as duas telas e ajusta a posição do vídeo da narração no YouTube.</p>
+
+  <h2>Dados processados</h2>
+  <table>
+    <thead><tr><th>Dado</th><th>Para quê</th><th>Onde fica</th></tr></thead>
+    <tbody>
+      <tr><td>Pixels da região do relógio nas abas escolhidas</td><td>Ler o tempo de jogo</td><td>Só na memória do navegador, durante a sincronização; descartados em seguida</td></tr>
+      <tr><td>Quais abas você escolheu (identificadores internos do Chrome)</td><td>Lembrar a escolha enquanto o navegador estiver aberto</td><td><code>chrome.storage.session</code>, no seu computador; apagado ao fechar o navegador</td></tr>
+      <tr><td>Ajuste fino por canal (um número em milissegundos)</td><td>Aplicar a mesma calibração nas próximas sincronizações</td><td><code>chrome.storage.local</code>, no seu computador</td></tr>
+    </tbody>
+  </table>
+  <p>Nenhum desses dados é enviado para a internet. A extensão não faz requisições de rede, não tem servidor, não usa analytics, cookies de rastreamento nem anúncios nas páginas que você visita.</p>
+
+  <h2>Permissões</h2>
+  <p>A extensão pede acesso apenas a <code>globo.com</code>, <code>disneyplus.com</code>, <code>primevideo.com</code>, <code>paramountplus.com</code> e <code>youtube.com</code>, onde ficam os streamings e a narração compatíveis, e às permissões <code>scripting</code> (ler o relógio e ajustar o vídeo nas abas escolhidas), <code>sidePanel</code> (o painel lateral) e <code>storage</code> (as configurações locais descritas acima).</p>
+
+  <h2>Compartilhamento</h2>
+  <p>Nenhum dado é vendido, transferido ou compartilhado com terceiros.</p>
+
+  <h2>Como apagar</h2>
+  <p>Remover a extensão em <code>chrome://extensions</code> apaga todas as configurações guardadas por ela.</p>
+
+  <h2>Mudanças nesta política</h2>
+  <p>Se a política mudar, a data acima será atualizada e a nova versão publicada nesta mesma página.</p>
+
+  <h2>Contato</h2>
+  <p><a href="mailto:nathansaraujo191@gmail.com">nathansaraujo191@gmail.com</a></p>
+
+  <p class="meta">O Matchtime é um projeto independente e não é afiliado à Globo, ao Premiere, ao Globoplay, ao YouTube nem à Tribuna 13.</p>
+</main>
+</body>
+</html>
